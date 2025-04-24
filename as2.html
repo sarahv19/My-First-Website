@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SCTM2005</title>
+        <link rel="stylesheet" href="as2.css">
+        <script src="as2.js"></script>
+        <script src="p5.min.js"></script>
+    </head>
+
+<body>
+    <div class="header">
+    <h2>Assignment 2: Citing Code</h2>
+    </div>
+
+    <!-- Note: This code below is mainly from a tutorial. -->
+   </body>
+   <center><h3>Click the images below to enlarge them!</h3></center>
+
+   //
+   <!-- My code -->
+    <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+        <div class="column" style="flex: 1 1 calc(33.333% - 20px); max-width: calc(33.333% - 20px);">
+            <div class="blur">
+                <!-- End of my code.-->
+                 <!-- I got this code from the "How to make an image grid tutorial." I used this tutorial because I wanted to create an image gallery. -->
+                <img id="myImg" src="pinkbutterflies.jpg" alt="Butterfly" style="width:100%; max-width:100%;" onclick="openModal(this)">
+                <img id="myImg" src="pinkbow.jpg" alt="Bows" style="width:100%; max-width:100%;">
+                <img src="pinkflowers.jpg" alt="Book Surrounded by Flowers" style="width:100%; max-width:100%;">
+                <img src="pinkrocks.jpg" alt="Heart Crystals" style="width:100%; max-width:100%;">
+                <img src="pinksunset.jpg" alt="Sunset" style="width:100%; max-width:100%;">
+                <img src="pinkpearls.jpg" alt="Pearls" style="width:100%; max-width:100%;">
+                <img src="pinkbear.jpg" alt="Teddy Bear" style="width:100%; max-width:100%;">
+            </div>
+        </div>
+        <!-- My code. -->
+        <div class="column" style="flex: 1 1 calc(33.333% - 20px); max-width: calc(33.333% - 20px);">
+            <div class="blur">
+                <!-- End of my code. -->
+                <img src="pinkroses.jpg" alt="Roses" style="width:100%; max-width:100%;">
+                <img src="pinkcherryblossoms.jpg" alt="Cherry Blossoms" style="width:100%; max-width:100%;">
+                <img src="pinkcandles.jpg" alt="Candles" style="width:100%; max-width:100%;">
+                <img src="pinksparkles.jpg" alt="Sparkles" style="width:100%; max-width:100%;">
+                <img src="pinkbow.jpg" alt="Bows" style="width:100%; max-width:100%;">
+                <img src="pinkwater.jpg" alt="Water" style="width:100%; max-width:100%;">
+                <img src="pinkswans.jpg" alt="Swans" style="width:100%; max-width:100%;">
+            </div>
+        </div>
+    </div>
+
+    <!-- My code. -->
+    <script>
+    document.querySelectorAll('.blur img').forEach(function(image) {
+        image.addEventListener('click', function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt || "Image";
+        });
+    });
+    </script>
+<!-- The code below is from the "How to make an image modal tutorial." I used this tutorial because I wanted for visitors to be able to interact with the images on the page. -->
+    <!-- The Modal (Not my code) -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="Butterfly"></div>
+    </div>
+ </html>
+<script>   
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("Butterfly");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+</html> <!-- End of tutorial code. -->
+<!-- My code. -->
+<div style="text-align: center;">
+    <h2>Credits</h2>
+</div>
+<div style="padding: 10px;">
+    <ul>
+        <li>
+            <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img" target="_blank">
+                https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img
+            </a>
+        </li>
+        <li>
+            <a href="https://www.w3schools.com/howto/howto_js_image_grid.asp" target="_blank">
+                https://www.w3schools.com/howto/howto_js_image_grid.asp
+            </a>
+        </li>
+    </ul>
+</div>
+    </list>
+
