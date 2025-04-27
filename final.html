@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SCTM2005</title>
+        <link rel="stylesheet" href="final.css">
+        <script src="final.js"></script>
+        <script src="p5.min.js"></script>
+    </head>
+
+<body>
+    <div class="header">
+        <br><br>
+    <h1 id="home">Sample Portfolio</h1>
+    <div style="margin-top: 40px;"></div>
+    <div class="nav" style="position: fixed; top: 0; width: 95%; background-color: #333; z-index: 900; padding: 10px; text-align: center;">
+        <a href="#home" style="color: white; margin: 0 15px; text-decoration: none;">Home</a>
+        <a href="#about" style="color: white; margin: 0 15px; text-decoration: none;">About</a>
+        <a href="#projects" style="color: white; margin: 0 15px; text-decoration: none;">Projects</a>
+        <a href="#contact" style="color: white; margin: 0 15px; text-decoration: none;">Contact</a>
+    </div>
+    <div style="margin-top: 30px;"></div>
+    <div style="border: 2px solid #FF69B4; padding: 15px; border-radius: 10px; background-color: #333; line-height: 1.6;">
+    <p style="font-size: 18px; text-align: center;">
+        Never gonna give you up—on creating memorable music and timeless performances. With a career spanning decades, I’ve mastered the art of blending soulful vocals, infectious melodies, and just the right amount of 80s charm. From "Never Gonna Give You Up" to live shows that keep audiences dancing, my work is all about authenticity, energy, and that signature baritone warmth.
+
+This portfolio is a glimpse into the music, the moments, and the (occasionally unexpected) legacy. Thanks for stopping by—no tricks, just great tunes.  
+    </p>
+    </div>
+    <br>
+    <br>
+    <h2 id="about">About Me</h2>
+    <br>
+    <img src="rickportfolio.png" alt="Portfolio Image" width="600" height="400" style="border-radius: 50%; width: 400px; height: 400px; object-fit: cover;">
+    <br><br>
+    <div style="margin-top: 20px; text-align: center;">
+        <audio controls>
+            <source src="rickroll.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div style="margin-bottom: 50px;"></div>
+    <div style="border: 2px solid #FF69B4; padding: 15px; border-radius: 10px; background-color: #333; line-height: 1.6;">
+        <p style="font-size: 18px; text-align: center;">
+            My name is <strong>Rick Astley</strong>. I am an apprentice under <strong>Stock Aitken Waterman (SAW)</strong> Productions. I am currently pursuing a career as a <strong>singer.</strong></p>
+    <br>
+    <p style="font-size: 18px; text-align: center;">My interests include <strong>music</strong>, <strong>dancing</strong>, and <strong>singing</strong>. I have a passion for creating music and wish to share my music with the World. </p>
+</div>
+    <div style="margin-top: 100px;"></div>
+    <h2 id="projects">Project Gallery</h2>
+    <div class="scroll-container">
+        <img src="rickastley1.jpg" alt="Rick1" width="600" height="400" onclick="openPopup(this)">
+        <img src="rickastley3.jpg" alt="Rick2" width="600" height="400" onclick="openPopup(this)">
+        <img src="rickastley2.jpg" alt="Rick3" width="600" height="400" onclick="openPopup(this)">
+        <img src="rickastley4.jpg" alt="Rick4" width="600" height="400" onclick="openPopup(this)">
+    </div>
+
+    <div id="imagePopup" class="popup" style="display: none;" onclick="closePopup()">
+        <div class="popup-content" onclick="event.stopPropagation()"></div>
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <img id="popupImage" src="" alt="Zoomed Image">
+        </div>
+    <div style="margin-bottom: 70px;"></div>
+    <h2 id="contact">Contact</h2>
+    <br> 
+    <div style="border: 2px solid #FF69B4; padding: 15px; border-radius: 10px; background-color: #333; line-height: 1.6;">
+        <p style="color: white; font-size: 18px; text-align: center;">
+    <p>Phone number: 1-800-GIVEUUP</p>
+    <p>Email address: Rick_Astley@hotmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/rickastley/" style="color: #FF69B4;">Rick Astley</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/rickastley/" style="color: #FF69B4;">@RickAstley</a></p>
+    </div>
+    </div>
+    </div>
